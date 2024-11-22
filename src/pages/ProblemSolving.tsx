@@ -6,6 +6,13 @@ import { useMath } from '../contexts/MathContext';
 import Seony from '../components/characters/Seony';
 import { soundManager } from '../utils/sound';
 
+// 파일 상단에 타입 정의 추가
+interface MathProblem {
+  question: string;
+  answer: number;
+  encouragement: string;
+}
+
 const ProblemSolving = () => {
   const { id } = useParams();
   const navigate = useNavigate();

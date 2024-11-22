@@ -58,8 +58,8 @@ const Home = () => {
         className="absolute bottom-4 left-4 text-sm text-gray-500 font-medium"
       >
         <div className="bg-white bg-opacity-70 px-3 py-1 rounded-lg shadow-sm">
-          2024년 12월 5일 🎁<br />
-          할아버지가 하윤이에게...
+          2024년 12월 1일 🎁<br />
+          외할아버지가 하윤이에게...
         </div>
       </motion.div>
 
