@@ -92,7 +92,7 @@ const Garden = () => {
           animate={{ scale: [1, 1.05, 1] }}
           transition={{ duration: 2, repeat: Infinity }}
         >
-          하윤이의 수학실력 성장기록 📈
+          서현이의 수학실력 성장기록 📈
         </motion.h1>
         <motion.p 
           className="text-lg text-black"
@@ -100,7 +100,7 @@ const Garden = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          우리 하윤이의 멋진 수학 성적표예요! ✨
+          우리 서현이의 멋진 수학 성적표예요! ✨
         </motion.p>
       </div>
 
@@ -184,7 +184,7 @@ const Garden = () => {
         <p className="text-black">
           <span className="font-medium text-purple-600">할아버지의 한마디:</span>
           <span className="ml-2">
-            "하윤아, 정말 잘하고 있어! 할아버지가 매우 자랑스러워~ 💝"
+            "서현아, 정말 잘하고 있어! 할아버지가 매우 자랑스러워~ 💝"
           </span>
         </p>
       </motion.div>

@@ -34,7 +34,7 @@ const Seony = ({ emotion, message }: SeonyProps) => {
         className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg p-4 mb-4 mr-4 shadow-lg max-w-xs border border-purple-100"
       >
         <span className="text-black font-medium">
-          {message || "안녕! 하윤아! 할아버지가 도와줄게~"}
+          {message || "안녕! 서현아! 할아버지가 도와줄게~"}
         </span>
         <div className="absolute bottom-0 right-0 transform translate-x-1/2 translate-y-1/2">
           <motion.div

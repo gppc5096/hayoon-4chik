@@ -8,7 +8,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="text-xl font-bold text-purple-600">
-            하윤이의 수학모험
+            서현이의 수학모험
           </Link>
           <motion.div
             initial={{ opacity: 0, y: -20 }}
