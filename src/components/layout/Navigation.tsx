@@ -14,7 +14,7 @@ const Navigation = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="absolute left-1/2 transform -translate-x-1/2"
+            className="absolute left-1/2 transform -translate-x-1/2 hidden md:block"
           >
             <motion.p
               className="text-2xl font-bold text-purple-800 font-gaegu"
