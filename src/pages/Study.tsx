@@ -135,11 +135,11 @@ const Study = () => {
         오늘의 수학 문제
       </h1>
 
-      {/* 연산 선택 탭 */}
-      <div className="flex justify-center mb-8 gap-4">
+      {/* 연산 선택 탭 - 모바일에서는 2x2 그리드로 변경 */}
+      <div className="grid grid-cols-2 md:flex md:justify-center mb-8 gap-4">
         <button
           onClick={() => setSelectedOperation(null)}
-          className={`px-6 py-3 rounded-lg transition-all ${
+          className={`px-4 md:px-6 py-3 rounded-lg transition-all text-sm md:text-base ${
             !selectedOperation 
               ? 'bg-purple-600 text-white' 
               : 'bg-white text-gray-600 hover:bg-purple-50'
@@ -151,7 +151,7 @@ const Study = () => {
           <button
             key={op.id}
             onClick={() => setSelectedOperation(op.id)}
-            className={`px-6 py-3 rounded-lg transition-all flex items-center gap-2 ${
+            className={`px-4 md:px-6 py-3 rounded-lg transition-all flex items-center justify-center gap-2 text-sm md:text-base ${
               selectedOperation === op.id
                 ? 'bg-purple-600 text-white'
                 : 'bg-white text-gray-600 hover:bg-purple-50'
@@ -163,8 +163,8 @@ const Study = () => {
         ))}
       </div>
 
-      {/* 문제 카드 그리드 */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* 문제 카드 그리드 - 모바일에서는 1열, 태블릿에서 2열, 데스크탑에서 4열로 변경 */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {filteredProblems.map((problem, index) => (
           <motion.div 
             key={problem.id}
@@ -174,26 +174,26 @@ const Study = () => {
             className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all cursor-pointer border border-gray-100"
             onClick={() => navigate(`/problem/${problem.id}`)}
           >
-            <div className="p-6">
+            <div className="p-4 md:p-6">
               <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center gap-3">
-                  <span className="text-2xl font-bold">{problem.icon}</span>
-                  <h2 className="text-lg font-bold text-purple-600">
+                <div className="flex items-center gap-2 md:gap-3">
+                  <span className="text-xl md:text-2xl font-bold">{problem.icon}</span>
+                  <h2 className="text-base md:text-lg font-bold text-purple-600">
                     {problem.title}
                   </h2>
                 </div>
-                <span className={`px-3 py-1 rounded-full text-sm border ${getLevelColor(problem.level)}`}>
+                <span className={`px-2 md:px-3 py-1 rounded-full text-xs md:text-sm border ${getLevelColor(problem.level)}`}>
                   {problem.level}
                 </span>
               </div>
-              <p className="text-gray-600 mb-4 text-sm">
+              <p className="text-gray-600 mb-4 text-xs md:text-sm">
                 {problem.description}
               </p>
               <div className="flex flex-wrap gap-2">
                 {problem.examples.map((example, idx) => (
                   <span 
                     key={idx} 
-                    className="bg-gray-50 px-3 py-1 rounded text-sm text-gray-600"
+                    className="bg-gray-50 px-2 md:px-3 py-1 rounded text-xs md:text-sm text-gray-600"
                   >
                     {example}
                   </span>
