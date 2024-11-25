@@ -222,7 +222,7 @@ const ProblemSolving = () => {
               </h2>
               <p className="text-gray-600 mb-6">
                 10문제를 모두 완료했어요!<br/>
-                서현이는 정말 대단해요!
+                하윤이는 정말 대단해요!
               </p>
               <motion.button 
                 whileHover={{ scale: 1.05 }}
