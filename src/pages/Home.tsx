@@ -16,7 +16,7 @@ const Home = () => {
           animate={{ scale: [1, 1.05, 1] }}
           transition={{ duration: 2, repeat: Infinity }}
         >
-          안녕! 사랑하는 하윤아... 🌟
+          안녕! 사랑하는 서현아... 🌟
         </motion.h1>
 
         <motion.div
@@ -27,8 +27,8 @@ const Home = () => {
         >
           <div className="relative w-64 h-64 mx-auto">
             <img
-              src="/hayoon.jpg"
-              alt="하윤이"
+              src="/seohyun.jpg"
+              alt="서현이"
               className="w-full h-full object-cover rounded-full shadow-lg border-4 border-purple-200"
             />
             <motion.div
@@ -59,11 +59,11 @@ const Home = () => {
       >
         <div className="bg-white bg-opacity-70 px-3 py-1 rounded-lg shadow-sm">
           2024년 12월 5일 생일날🎁<br />
-          할아버지가 하윤이에게...
+          할아버지가 서현이에게...
         </div>
       </motion.div>
 
-      <Seony emotion="happy" message="하윤아! 오늘도 재미있게 공부해보자!" />
+      <Seony emotion="happy" message="서현아! 오늘도 재미있게 공부해보자!" />
     </div>
   );
 };
