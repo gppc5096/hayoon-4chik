@@ -1,4 +1,4 @@
-# 하윤이의 수학 모험 (Hayun's Math Adventure)
+# 하윤이의 수학 모험 (Hayun's Math Adventure) Favicon Color Update
 
 ## 프로젝트 소개
 "하윤이의 수학 모험"은 초등학생 하윤이를 위해 특별히 제작된 맞춤형 수학 학습 웹 애플리케이션입니다. 할아버지의 따뜻한 응원과 함께하는 즐거운 수학 공부를 목표로 합니다.
