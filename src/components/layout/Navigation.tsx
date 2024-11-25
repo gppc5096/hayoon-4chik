@@ -7,7 +7,7 @@ const Navigation = () => {
     <nav className="bg-white shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="text-xl md:text-xl text-lg font-bold text-purple-600">
+          <Link to="/" className="text-base sm:text-lg md:text-xl font-bold text-purple-600">
             서현이의 수학모험
           </Link>
           <motion.div
